@@ -4,6 +4,7 @@
   //if (confirm('Deseja pular a pergunta?'))window.location="second-question.html";else alert('You selected Cancel');
 //}
 
+//Variável que armazena no cache do browser
 localStorage.point;
 localStorage.result;
 
@@ -43,6 +44,22 @@ function secondAsk(){
 function thirdAsk(){
 
     if(document.getElementById("radioB").checked == true){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="fourth-question.html";
+    }
+    else {
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="fourth-question.html";
+    }
+}
+
+function fourthAsk(){
+
+    if(document.getElementById("radioA").checked == true){
         localStorage.point = 1;
         localStorage.result = parseInt(localStorage.result) + 1;
         alert("Você acertou! Seu saldo é : "+(localStorage.result));
