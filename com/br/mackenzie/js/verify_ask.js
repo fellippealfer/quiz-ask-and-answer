@@ -95,7 +95,39 @@ function sixthAsk(){
         localStorage.point = 1;
         localStorage.result = parseInt(localStorage.result) + 1;
         alert("Você acertou! Seu saldo é : "+(localStorage.result));
-        window.location="fifth-question.html";
+        window.location="seventh-question.html";
+    }
+    else {
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="seventh-question.html";
+    }
+}
+
+function seventhAsk(){
+
+    if(document.getElementById("radioB").checked == true){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="eighth-question.html";
+    }
+    else {
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="eighth-question.html";
+    }
+}
+
+function eighthAsk(){
+
+    if(document.getElementById("radioC").checked == true){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="eighth-question.html";
     }
     else {
       localStorage.point = 0;
