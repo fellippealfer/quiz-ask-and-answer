@@ -127,12 +127,47 @@ function eighthAsk(){
         localStorage.point = 1;
         localStorage.result = parseInt(localStorage.result) + 1;
         alert("Você acertou! Seu saldo é : "+(localStorage.result));
-        window.location="eighth-question.html";
+        window.location="ninth-question.html";
     }
     else {
       localStorage.point = 0;
       localStorage.result = localStorage.result;
       alert("Você errou! Seu saldo é: "+localStorage.result)
-      window.location="fifth-question.html";
+      window.location="ninth-question.html";
+    }
+}
+
+function ninthAsk(){
+
+    if(document.getElementById("radioD").checked == true){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="tenth-question.html";
+    }
+    else {
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="tenth-question.html";
+    }
+}
+
+function tenthAsk(){
+
+    var x;
+
+    x = document.getElementById("txtAsk").value
+    if(x == "Tanakh"){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="first-question.html";
+    }
+    else{
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="first-question.html";
     }
 }
