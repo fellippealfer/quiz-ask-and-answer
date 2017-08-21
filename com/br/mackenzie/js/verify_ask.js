@@ -63,12 +63,28 @@ function fourthAsk(){
         localStorage.point = 1;
         localStorage.result = parseInt(localStorage.result) + 1;
         alert("Você acertou! Seu saldo é : "+(localStorage.result));
-        window.location="third-question.html";
+        window.location="fifth-question.html";
     }
     else {
       localStorage.point = 0;
       localStorage.result = localStorage.result;
       alert("Você errou! Seu saldo é: "+localStorage.result)
-      window.location="third-question.html";
+      window.location="fifth-question.html";
+    }
+}
+
+function fifthAsk(){
+
+    if(document.getElementById("radioB").checked == true){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="fifth-question.html";
+    }
+    else {
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="fifth-question.html";
     }
 }
