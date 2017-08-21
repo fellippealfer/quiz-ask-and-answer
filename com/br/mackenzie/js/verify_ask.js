@@ -79,6 +79,22 @@ function fifthAsk(){
         localStorage.point = 1;
         localStorage.result = parseInt(localStorage.result) + 1;
         alert("Você acertou! Seu saldo é : "+(localStorage.result));
+        window.location="sixth-question.html";
+    }
+    else {
+      localStorage.point = 0;
+      localStorage.result = localStorage.result;
+      alert("Você errou! Seu saldo é: "+localStorage.result)
+      window.location="sixth-question.html";
+    }
+}
+
+function sixthAsk(){
+
+    if(document.getElementById("radioA").checked == true){
+        localStorage.point = 1;
+        localStorage.result = parseInt(localStorage.result) + 1;
+        alert("Você acertou! Seu saldo é : "+(localStorage.result));
         window.location="fifth-question.html";
     }
     else {
